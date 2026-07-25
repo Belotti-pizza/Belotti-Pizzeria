@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cátalogo | Belotti</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,80₀;1,9₀&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-belotti sticky-top">
+  <div class="container">
+<a class="navbar-brand" href="index.html">
+  <img src="../imagenes/logo.png" alt="Belotti Pizzería Italiana" class="logo-img">
+</a>
+    <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+      <i class="bi bi-list text-white fs-1"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="../html/catalogo.html">Cátalogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/Contactanos.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ===================== ENCABEZADO DE PÁGINA ===================== -->
+<div class="page-header">
+  <div class="container">
+    <h1>Nuestro Cátalogo</h1>
+  </div>
+</div>
+
+<!-- ===================== CATALOGO ===================== -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card dish-card">
+          <img src="../imagenes/pitsa.png" class="card-img-top" alt="Pizza especial">
+          <div class="card-body">
+            <h3 class="card-title h5">Pizza especial</h3>
+            <p class="card-text small text-muted">Champiñones, pimentón y aceitunas negras sobre masa artesanal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card dish-card">
+          <img src="../imagenes/lasagna.png" class="card-img-top" alt="Lasaña">
+          <div class="card-body">
+            <h3 class="card-title h5">Lasaña Belotti</h3>
+            <p class="card-text small text-muted">Capas de pasta fresca, carne y queso gratinado.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card dish-card">
+          <img src="../imagenes/panzeroti.png" class="card-img-top" alt="Calzone">
+          <div class="card-body">
+            <h3 class="card-title h5">Panzeroti</h3>
+            <p class="card-text small text-muted">Masa dorada rellena de ingredientes frescos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card dish-card">
+          <img src="../imagenes/pasta.png" class="card-img-top" alt="Spaghetti">
+          <div class="card-body">
+            <h3 class="card-title h5">Spaghetti Bolognesa</h3>
+            <p class="card-text small text-muted">Salsa tradicional italiana con queso parmesano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER / CONTACTO ===================== -->
+<footer id="contacto" class="belotti-footer">
+  <div class="container">
+    <h2 class="section-title footer-title">Tus mejores momentos<br>lo encuentras con nosotros</h2>
+
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="map-frame">
+          <iframe
+            src="https://maps.google.com/maps?q=Av.%20Guabinal%20%2351-53%2C%20Ibagu%C3%A9%2C%20Tolima&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Belotti"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <ul class="contact-list">
+          <li>
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+573136630487">313 663 0487</a>
+          </li>
+          <li>
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Av. Guabinal #51-53<br>Barrio Rincón de Piedra Pintada<br>Ibagué - Tolima</span>
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:bellotipizzaitaliana@gmail.com">bellotipizzaitaliana@gmail.com</a>
+          </li>
+          <li>
+            <i class="bi bi-globe2"></i>
+            <a href="https://www.pizzeriabelotti.com" target="_blank" rel="noopener">www.pizzeriabelotti.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social-row">
+      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+    </div>
+
+    <p class="copyright">&copy; <span id="year"></span> Belotti Pizzería Italiana. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+:root{
+    --belotti-red: #7A1418;
+    --belotti-red-dark: #5A0E11;
+    --belotti-green: #163526;
+    --belotti-green-dark: #0E241A;
+    --belotti-cream: #FFFFFF;
+    --belotti-text: #2B2A27;
+    --belotti-muted: #6b6862;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--belotti-text);
+    background: var(--belotti-cream);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .display-font{
+    font-family: 'Playfair Display', serif;
+  }
+
+  .section-title{
+    font-family:'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: .5px;
+  }
+
+  .text-belotti-red{ color: var(--belotti-red); }
+  .bg-belotti-red{ background-color: var(--belotti-red); }
+  .bg-belotti-green{ background-color: var(--belotti-green); }
+
+  /* ===== NAVBAR ===== */
+  .navbar-belotti{
+    background-color: var(--belotti-red);
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+  }
+  .navbar-belotti .nav-link{
+    color: #f2e9e4;
+    font-weight: 500;
+    letter-spacing: .3px;
+    margin: 0 .6rem;
+    transition: color .2s ease;
+  }
+  .navbar-belotti .nav-link:hover{ color: #ffffff; }
+
+  .belotti-logo{
+    border: 2px solid #fff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    color: #fff;
+  }
+  .belotti-logo .top-line{
+    font-size: .5rem;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #2f7d4f;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+  .belotti-logo .brand-row{
+    display:flex;
+    align-items:center;
+    gap:4px;
+  }
+  .belotti-logo .brand-text{
+    font-family:'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+  }
+  .belotti-logo .wheel{
+    width: 20px; height: 20px;
+    border-radius:50%;
+    border: 2px solid #fff;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .belotti-logo .wheel::before{
+    content:"";
+    position:absolute; inset: 2px;
+    border-radius:50%;
+    background:
+      radial-gradient(circle, transparent 0 3px, #fff 3px 4px, transparent 4px),
+      repeating-conic-gradient(#fff 0 10deg, transparent 10deg 45deg);
+  }
+  .belotti-logo .bottom-line{
+    font-size: .48rem;
+    letter-spacing: 1.5px;
+    border-top: 1px solid #2f7d4f;
+    padding-top: 2px;
+    margin-top: 3px;
+    width: 100%;
+    text-align:center;
+    font-weight: 600;
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    background-color: var(--belotti-red);
+    position: relative;
+    padding-bottom: 140px;
+  }
+  .hero .hero-heading{
+    color: #fff;
+  }
+  .hero .hero-heading .eyebrow{
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    display:block;
+  }
+  .hero .hero-heading .big-word{
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1;
+    display:block;
+    letter-spacing: 1px;
+  }
+  .hero .hero-heading .sub{
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: 500;
+    display:block;
+    margin-top:.25rem;
+  }
+  @media (max-width: 767.98px){
+    .hero .hero-heading .big-word{ font-size: 3.2rem; }
+    .hero .hero-heading .eyebrow{ font-size: 1.3rem; }
+    .hero .hero-heading .sub{ font-size: 1.1rem; }
+  }
+
+  .hero-pizza-wrap{
+    position: relative;
+    z-index: 3;
+    margin-bottom: -120px;
+  }
+  .hero-pizza-wrap img{
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  /* ===== MENU STRIP ===== */
+  .menu-strip{
+    padding-top: 70px;
+  }
+  @media (max-width: 767.98px){
+    .menu-strip{ padding-top: 50px; }
+  }
+  .dish-item{
+    text-align:center;
+  }
+  .dish-item img{
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-bottom: .75rem;
+    transition: transform .3s ease, filter .3s ease;
+    cursor: pointer;
+  }
+  .dish-item img:hover{
+    transform: scale(1.12) translateY(-6px);
+    filter: drop-shadow(0 12px 18px rgba(0,0,0,.25));
+  }
+  .dish-item span{
+    display:block;
+    font-weight: 600;
+    font-size: .95rem;
+    color: var(--belotti-text);
+  }
+
+  /* ===== ABOUT / IMAGE-TEXT BLOCKS ===== */
+  .about-photo{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 20px 35px rgba(0,0,0,.15);
+  }
+  .about-text{
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--belotti-text);
+  }
+
+  .tagline{
+    color: var(--belotti-red);
+    text-align:center;
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  .tagline.on-dark{ color: #fff; }
+  @media (max-width: 767.98px){
+    .tagline{ font-size: 1.35rem; }
+  }
+
+  /* ===== DOODLE DIVIDER ===== */
+  .doodle-strip{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: clamp(10px, 3vw, 34px);
+    flex-wrap: wrap;
+    color: var(--belotti-red);
+    opacity: .75;
+    padding: 1rem 0;
+  }
+  .doodle-strip svg{ width: 30px; height: 30px; flex-shrink:0; }
+  .doodle-strip svg.big{ width: 58px; height: 58px; }
+  .doodle-strip.on-dark{ color: #cfe3d6; }
+
+  /* ===== CATALOGO CARDS ===== */
+  .dish-card{
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(122,20,24,.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+    height: 100%;
+  }
+  .dish-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(122,20,24,.16);
+  }
+  .dish-card img{
+    height: 210px;
+    object-fit: cover;
+  }
+  .dish-card .card-body{
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+  .dish-card .card-title{
+    font-family:'Playfair Display', serif;
+    color: var(--belotti-red);
+    font-weight: 600;
+  }
+
+  /* ===== FOOTER ===== */
+  footer.belotti-footer{
+    background-color: var(--belotti-green);
+    color: #eef3ee;
+    padding: 4rem 0 2.5rem;
+  }
+  footer .footer-title{
+    color:#fff;
+    text-align:center;
+    margin-bottom: 3rem;
+  }
+  footer .map-frame{
+    border-radius: 12px;
+    overflow: hidden;
+    border: 4px solid rgba(255,255,255,.15);
+    height: 280px;
+  }
+  footer .map-frame iframe{
+    width: 100%; height:100%; border:0; filter: grayscale(.15);
+  }
+  footer .contact-list{
+    list-style:none;
+    padding:0;
+    margin: 0;
+  }
+  footer .contact-list li{
+    display:flex;
+    gap: .9rem;
+    align-items:flex-start;
+    margin-bottom: 1.2rem;
+    font-size: 1.02rem;
+  }
+  footer .contact-list li i{
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 2px;
+  }
+  footer .contact-list a{
+    color: #eef3ee;
+    text-decoration: none;
+  }
+  footer .contact-list a:hover{ color: #fff; text-decoration: underline; }
+
+  .social-row{
+    display:flex;
+    justify-content:center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .social-row a{
+    width: 42px; height: 42px;
+    border-radius:50%;
+    background: rgba(255,255,255,.12);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;
+    font-size: 1.1rem;
+    transition: background .2s ease, transform .2s ease;
+  }
+  .social-row a:hover{ background:#fff; color: var(--belotti-green); transform: translateY(-3px); }
+
+  .copyright{
+    text-align:center;
+    font-size: .82rem;
+    color: rgba(255,255,255,.55);
+    margin-top: 3rem;
+  }
+
+  /* generic section spacing */
+  .section{ padding: 5rem 0; }
+  @media (max-width: 767.98px){ .section{ padding: 3.2rem 0; } }
+
+/* ===== UTILIDADES POPPINS (todos los pesos) ===== */
+.poppins-thin{ font-family:"Poppins", sans-serif; font-weight:100; font-style:normal; }
+.poppins-extralight{ font-family:"Poppins", sans-serif; font-weight:200; font-style:normal; }
+.poppins-light{ font-family:"Poppins", sans-serif; font-weight:300; font-style:normal; }
+.poppins-regular{ font-family:"Poppins", sans-serif; font-weight:400; font-style:normal; }
+.poppins-medium{ font-family:"Poppins", sans-serif; font-weight:500; font-style:normal; }
+.poppins-semibold{ font-family:"Poppins", sans-serif; font-weight:600; font-style:normal; }
+.poppins-bold{ font-family:"Poppins", sans-serif; font-weight:700; font-style:normal; }
+.poppins-extrabold{ font-family:"Poppins", sans-serif; font-weight:800; font-style:normal; }
+.poppins-black{ font-family:"Poppins", sans-serif; font-weight:900; font-style:normal; }
+.poppins-thin-italic{ font-family:"Poppins", sans-serif; font-weight:100; font-style:italic; }
+.poppins-extralight-italic{ font-family:"Poppins", sans-serif; font-weight:200; font-style:italic; }
+.poppins-light-italic{ font-family:"Poppins", sans-serif; font-weight:300; font-style:italic; }
+.poppins-regular-italic{ font-family:"Poppins", sans-serif; font-weight:400; font-style:italic; }
+.poppins-medium-italic{ font-family:"Poppins", sans-serif; font-weight:500; font-style:italic; }
+.poppins-semibold-italic{ font-family:"Poppins", sans-serif; font-weight:600; font-style:italic; }
+.poppins-bold-italic{ font-family:"Poppins", sans-serif; font-weight:700; font-style:italic; }
+.poppins-extrabold-italic{ font-family:"Poppins", sans-serif; font-weight:800; font-style:italic; }
+.poppins-black-italic{ font-family:"Poppins", sans-serif; font-weight:900; font-style:italic; }
+/* ===== PAGE HEADER (páginas internas) ===== */
+.page-header{
+  background-color: var(--belotti-red);
+  padding: 3.5rem 0 2.8rem;
+  text-align: center;
+}
+.page-header h1{
+  color: #fff;
+  font-size: 2.3rem;
+  margin: 0;
+}
+@media (max-width: 767.98px){
+  .page-header{ padding: 2.6rem 0 2rem; }
+  .page-header h1{ font-size: 1.7rem; }
+}
+
+/* Estado activo del link en el navbar */
+.navbar-belotti .nav-link.active{
+  color: #fff;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+}
+
+/* ===== LOGO REAL (imagen) ===== */
+.logo-img{
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+@media (max-width: 767.98px){
+  .logo-img{ height: 40px; }
+}
