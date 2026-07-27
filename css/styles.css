@@ -40,70 +40,14 @@
     padding-bottom: .9rem;
   }
   .navbar-belotti .nav-link{
-    color: #f2e9e4;
-    font-weight: 500;
-    letter-spacing: .3px;
-    margin: 0 .6rem;
-    transition: color .2s ease;
+  color: #f2e9e4;
+  font-weight: 500;
+  font-size: 1.15rem;
+  letter-spacing: .3px;
+  margin: 0 .6rem;
+  transition: color .2s ease;
   }
   .navbar-belotti .nav-link:hover{ color: #ffffff; }
-
-  .belotti-logo{
-    border: 2px solid #fff;
-    padding: 3px 10px;
-    border-radius: 3px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1;
-    color: #fff;
-  }
-  .belotti-logo .top-line{
-    font-size: .5rem;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #2f7d4f;
-    padding-bottom: 2px;
-    margin-bottom: 3px;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-  }
-  .belotti-logo .brand-row{
-    display:flex;
-    align-items:center;
-    gap:4px;
-  }
-  .belotti-logo .brand-text{
-    font-family:'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.35rem;
-    letter-spacing: 1px;
-  }
-  .belotti-logo .wheel{
-    width: 20px; height: 20px;
-    border-radius:50%;
-    border: 2px solid #fff;
-    position: relative;
-    flex-shrink: 0;
-  }
-  .belotti-logo .wheel::before{
-    content:"";
-    position:absolute; inset: 2px;
-    border-radius:50%;
-    background:
-      radial-gradient(circle, transparent 0 3px, #fff 3px 4px, transparent 4px),
-      repeating-conic-gradient(#fff 0 10deg, transparent 10deg 45deg);
-  }
-  .belotti-logo .bottom-line{
-    font-size: .48rem;
-    letter-spacing: 1.5px;
-    border-top: 1px solid #2f7d4f;
-    padding-top: 2px;
-    margin-top: 3px;
-    width: 100%;
-    text-align:center;
-    font-weight: 600;
-  }
 
   /* ===== HERO ===== */
   .hero{
@@ -115,20 +59,20 @@
     color: #fff;
   }
   .hero .hero-heading .eyebrow{
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     font-weight: 500;
     letter-spacing: 3px;
     display:block;
   }
   .hero .hero-heading .big-word{
-    font-size: 5.5rem;
+    font-size: 6rem;
     font-weight: 700;
     line-height: 1;
     display:block;
     letter-spacing: 1px;
   }
   .hero .hero-heading .sub{
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     letter-spacing: 4px;
     font-weight: 500;
     display:block;
@@ -178,7 +122,7 @@
   .dish-item span{
     display:block;
     font-weight: 600;
-    font-size: .95rem;
+    font-size: 1.1rem;
     color: var(--belotti-text);
   }
 
@@ -191,9 +135,12 @@
     box-shadow: 0 20px 35px rgba(0,0,0,.15);
   }
   .about-text{
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     color: var(--belotti-text);
+  }
+  @media (max-width: 767.98px){
+    .about-text{ font-size: 1.5rem; }
   }
 
   .tagline{
@@ -207,20 +154,20 @@
     .tagline{ font-size: 1.35rem; }
   }
 
-  /* ===== DOODLE DIVIDER ===== */
+  /* ===== DOODLE DIVIDER (imagen) ===== */
   .doodle-strip{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap: clamp(10px, 3vw, 34px);
-    flex-wrap: wrap;
-    color: var(--belotti-red);
-    opacity: .75;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
   }
-  .doodle-strip svg{ width: 30px; height: 30px; flex-shrink:0; }
-  .doodle-strip svg.big{ width: 58px; height: 58px; }
-  .doodle-strip.on-dark{ color: #cfe3d6; }
+  .doodle-strip img{
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+    opacity: .85;
+  }
 
   /* ===== CATALOGO CARDS ===== */
   .dish-card{
@@ -338,6 +285,7 @@
 .poppins-bold-italic{ font-family:"Poppins", sans-serif; font-weight:700; font-style:italic; }
 .poppins-extrabold-italic{ font-family:"Poppins", sans-serif; font-weight:800; font-style:italic; }
 .poppins-black-italic{ font-family:"Poppins", sans-serif; font-weight:900; font-style:italic; }
+
 /* ===== PAGE HEADER (páginas internas) ===== */
 .page-header{
   background-color: var(--belotti-red);
@@ -367,6 +315,6 @@
   width: auto;
   object-fit: contain;
 }
-@media (max-width: 767.98px){
+@media (max-width: 760px){
   .logo-img{ height: 40px; }
 }
