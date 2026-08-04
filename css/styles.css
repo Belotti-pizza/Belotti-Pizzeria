@@ -39,13 +39,15 @@
     padding-top: .9rem;
     padding-bottom: .9rem;
   }
-  .navbar-belotti .nav-link{
-    color: #f2e9e4;
-    font-weight: 500;
-    letter-spacing: .3px;
-    margin: 0 .6rem;
-    transition: color .2s ease;
+.navbar-belotti .nav-link{
+  color: #f2e9e4;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: .3px;
+  margin: 0 .9rem;
+  transition: color .2s ease;
   }
+
   .navbar-belotti .nav-link:hover{ color: #ffffff; }
 
   /* ===== HERO ===== */
@@ -119,10 +121,10 @@
     filter: drop-shadow(0 12px 18px rgba(0,0,0,.25));
   }
   .dish-item span{
-    display:block;
-    font-weight: 600;
-    font-size: .95rem;
-    color: var(--belotti-text);
+  display:block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--belotti-text);
   }
 
   /* ===== ABOUT / IMAGE-TEXT BLOCKS ===== */
@@ -135,11 +137,11 @@
   }
 .about-text{
   font-size: 1.5rem;
-  line-height: 1.8;
+  line-height: 1.7;
   color: var(--belotti-text);
   text-align: justify;
 }
-  }
+  
   @media (max-width: 767.98px){
     .about-text{ font-size: 1.1rem; }
   }
