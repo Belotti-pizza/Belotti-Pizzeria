@@ -40,12 +40,11 @@
     padding-bottom: .9rem;
   }
   .navbar-belotti .nav-link{
-  color: #f2e9e4;
-  font-weight: 500;
-  font-size: 1.15rem;
-  letter-spacing: .3px;
-  margin: 0 .6rem;
-  transition: color .2s ease;
+    color: #f2e9e4;
+    font-weight: 500;
+    letter-spacing: .3px;
+    margin: 0 .6rem;
+    transition: color .2s ease;
   }
   .navbar-belotti .nav-link:hover{ color: #ffffff; }
 
@@ -59,20 +58,20 @@
     color: #fff;
   }
   .hero .hero-heading .eyebrow{
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 500;
     letter-spacing: 3px;
     display:block;
   }
   .hero .hero-heading .big-word{
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-weight: 700;
     line-height: 1;
     display:block;
     letter-spacing: 1px;
   }
   .hero .hero-heading .sub{
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     letter-spacing: 4px;
     font-weight: 500;
     display:block;
@@ -122,7 +121,7 @@
   .dish-item span{
     display:block;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: .95rem;
     color: var(--belotti-text);
   }
 
@@ -135,13 +134,12 @@
     box-shadow: 0 20px 35px rgba(0,0,0,.15);
   }
   .about-text{
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     line-height: 1.8;
     color: var(--belotti-text);
-    text-align: justify;
   }
   @media (max-width: 767.98px){
-    .about-text{ font-size: 1.5rem; }
+    .about-text{ font-size: 1.1rem; }
   }
 
   .tagline{
@@ -224,14 +222,19 @@
   footer .contact-list li{
     display:flex;
     gap: .9rem;
-    align-items:flex-start;
+    align-items:center;
     margin-bottom: 1.2rem;
     font-size: 1.02rem;
+  }
+  footer .contact-list li.align-top{
+    align-items: flex-start;
   }
   footer .contact-list li i{
     font-size: 1.25rem;
     color: #fff;
-    margin-top: 2px;
+  }
+  footer .contact-list li.align-top i{
+    margin-top: 3px;
   }
   footer .contact-list a{
     color: #eef3ee;
@@ -316,6 +319,6 @@
   width: auto;
   object-fit: contain;
 }
-@media (max-width: 760px){
+@media (max-width: 767.98px){
   .logo-img{ height: 40px; }
 }
